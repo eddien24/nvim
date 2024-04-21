@@ -8,6 +8,9 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.guicursor = ""
 
 vim.opt.scrolloff = 8
 
