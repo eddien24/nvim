@@ -42,9 +42,6 @@ require("lazy").setup({
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
-    {
-        'akinsho/toggleterm.nvim', version = "*", config = true
-    },
     "lewis6991/gitsigns.nvim",
     {
         "christoomey/vim-tmux-navigator",
