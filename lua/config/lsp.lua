@@ -25,7 +25,12 @@ config.lua_ls.setup {
     }
 }
 
-config.clangd.setup {}
+config.clangd.setup {
+    init_options = {
+        fallbackFlags = { "--std=c++20" }
+    },
+}
+
 config.rust_analyzer.setup {}
 
 cmp.setup({
