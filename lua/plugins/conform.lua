@@ -17,9 +17,8 @@ return {
     opts = {
         -- Define your formatters
         formatters_by_ft = {
-            lua = { "stylua" },
-            c = { "clangd-format" },
-            cpp = { "clangd-format" },
+            c = { "clang-format" },
+            cpp = { "clang-format" },
             rust = { "rustfmt" },
         },
         -- Set up format-on-save
