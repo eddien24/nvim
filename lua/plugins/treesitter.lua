@@ -12,6 +12,7 @@ return {
                 "cmake",
                 "cpp",
                 "rust",
+                "hyprlang",
             },
             sync_install = false,
             auto_install = true,
@@ -20,5 +21,9 @@ return {
                 additioal_vim_regex_highlighting = false,
             },
         }
+
+        vim.filetype.add({
+            pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+        })
     end,
 }
