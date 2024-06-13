@@ -2,21 +2,21 @@ local lsp_zero = require("lsp-zero")
 local config = require("lspconfig")
 local cmp = require("cmp")
 
-require("mason").setup({
-    ensure_installed = {
-        -- formatters
-        "clang-format",
-    },
-})
-
-require("mason-lspconfig").setup({
-    ensure_installed = {
-        -- LSPs
-        "lua_ls",
-        "clangd",
-        "rust_analyzer",
-    },
-})
+-- require("mason").setup({
+--     ensure_installed = {
+--         -- formatters
+--         "clang-format",
+--     },
+-- })
+--
+-- require("mason-lspconfig").setup({
+--     ensure_installed = {
+--         -- LSPs
+--         "lua_ls",
+--         "clangd",
+--         "rust_analyzer",
+--     },
+-- })
 
 lsp_zero.on_attach(function(_, bufnr)
     lsp_zero.default_keymaps({ buffer = bufnr })
@@ -32,12 +32,7 @@ config.lua_ls.setup({
     },
 })
 
-config.clangd.setup({
-    init_options = {
-        fallbackFlags = { "--std=c++20" },
-    },
-})
-
+config.clangd.setup({})
 config.rust_analyzer.setup({})
 
 cmp.setup({
