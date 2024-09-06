@@ -34,6 +34,7 @@ config.lua_ls.setup({
 
 config.clangd.setup({})
 config.rust_analyzer.setup({})
+config.texlab.setup({})
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
