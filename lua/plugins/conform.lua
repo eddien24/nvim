@@ -24,6 +24,7 @@ return {
             javascriptreact = { "prettier" },
             typescriptreact = { "prettier" },
             markdown = { "prettier" },
+            go = { "gofumpt" },
         },
         format_on_save = { timeout_ms = 500, lsp_fallback = true },
         formatters = {
@@ -36,4 +37,3 @@ return {
         vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
 }
-
