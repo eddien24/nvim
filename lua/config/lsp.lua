@@ -32,7 +32,7 @@ config.lua_ls.setup({
     },
 })
 
-config.clangd.setup({})
+config.ccls.setup({})
 config.rust_analyzer.setup({})
 config.texlab.setup({})
 config.gopls.setup({})
@@ -46,3 +46,5 @@ cmp.setup({
         completeopt = "menu,menuone,noinsert",
     },
 })
+
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
