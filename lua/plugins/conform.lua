@@ -25,8 +25,9 @@ return {
             typescriptreact = { "prettier" },
             markdown = { "prettier" },
             go = { "goimports", "gofumpt" },
+            python = { "isort", "black" },
         },
-        format_on_save = { timeout_ms = 500, lsp_fallback = true },
+        format_on_save = { timeout_ms = 1000, lsp_fallback = true },
         formatters = {
             prettier = {
                 prepend_args = { "--prose-wrap", "always" },

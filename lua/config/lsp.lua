@@ -36,6 +36,7 @@ config.ccls.setup({})
 config.rust_analyzer.setup({})
 config.texlab.setup({})
 config.gopls.setup({})
+config.pyright.setup({})
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
