@@ -37,6 +37,7 @@ config.rust_analyzer.setup({})
 config.texlab.setup({})
 config.gopls.setup({})
 config.pyright.setup({})
+config.tinymist.setup({})
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
