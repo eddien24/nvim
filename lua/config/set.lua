@@ -13,4 +13,5 @@ o.scrolloff = 8
 o.updatetime = 50
 o.colorcolumn = "80"
 o.undofile = true
+o.spell = true;
 vim.g.have_nerd_font = true
