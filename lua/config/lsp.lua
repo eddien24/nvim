@@ -32,7 +32,8 @@ config.lua_ls.setup({
     },
 })
 
-config.ccls.setup({})
+-- config.ccls.setup({})
+config.clangd.setup({}) 
 config.rust_analyzer.setup({})
 config.texlab.setup({})
 config.gopls.setup({})
