@@ -23,7 +23,6 @@ return {
             typescript = { "prettier" },
             javascriptreact = { "prettier" },
             typescriptreact = { "prettier" },
-            markdown = { "prettier" },
             go = { "goimports", "gofumpt" },
             python = { "isort", "black" },
             typst = { "typstyle" },
