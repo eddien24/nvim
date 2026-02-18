@@ -1,0 +1,61 @@
+[
+  "sig"
+  "pred"
+  "fun"
+  "fact"
+  "assert"
+  "inst"
+  "run"
+  "check"
+  "test"
+  "example"
+  "module"
+  "open"
+  "all"
+  "some"
+  "lone"
+  "one"
+  "no"
+  "sum"
+  "abstract"
+  "extends"
+] @keyword
+
+[
+  "and"
+  "or"
+  "not"
+  "implies"
+  "iff"
+  "always"
+  "eventually"
+  "after"
+  "once"
+  "historically"
+  "until"
+  "releases"
+  "since"
+  "triggered"
+  "next"
+  "init"
+] @keyword.operator
+
+[
+  "&&" "||" "=>" "<=>" "!"
+  "." "->" "&" "+" "-" "~" "*" "^" "#"
+  "=" "!=" "<" ">" "<=" ">="
+  "in"
+  "is"
+] @operator
+
+(number) @number
+(string) @string
+(comment) @comment
+(keyword_constant) @constant.builtin
+
+(identifier) @variable
+(sig_declaration (identifier) @type)
+(field_declaration (identifier) @property)
+(parameter (identifier) @variable.parameter)
+(pred_declaration (identifier) @function)
+(fun_declaration (identifier) @function)
