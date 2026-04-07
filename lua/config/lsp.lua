@@ -33,7 +33,7 @@ config.lua_ls.setup({
 })
 
 -- config.ccls.setup({})
-config.clangd.setup({}) 
+config.clangd.setup({})
 config.rust_analyzer.setup({})
 config.texlab.setup({})
 config.gopls.setup({})
@@ -51,3 +51,4 @@ cmp.setup({
 })
 
 vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
+vim.keymap.set("n", "gr", vim.lsp.buf.references)
