@@ -1,18 +1,16 @@
 return {
     'nvim-treesitter/nvim-treesitter',
-    build = ":TSUpdate",
-    config = function()
-        require 'nvim-treesitter.configs'.setup {
-            sync_install = false,
-            auto_install = true,
-            highlight = {
-                enable = true,
-                additioal_vim_regex_highlighting = false,
-            },
-        }
-
-        vim.filetype.add({
-            pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
-        })
-    end,
+    lazy = false,
+    build = ':TSUpdate',
+    init = function()
+        vim.api.nvim_create_autocmd('FileType', { 
+            callback = function() 
+                pcall(vim.treesitter.start) 
+            end, 
+        }) 
+    end, 
+    opts = {
+        ensure_installed = { "all" }, 
+        auto_install = true, 
+    }, 
 }
